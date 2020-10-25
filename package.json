@@ -2,26 +2,24 @@
   "name": "FoodFy",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "dependencies": {
-    "express": "^4.17.1",
-    "nodemon": "^2.0.4",
-    "nunjucks": "^3.2.2"
-  },
-  "devDependencies": {},
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon node server.js"
+    "start": "npm-run-all -p nodemon browsersync",
+    "nodemon": "nodemon node server.js",
+    "browsersync": "browser-sync start --proxy http://localhost:3333 --files 'public, views'",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/galetz/ProjetosWEB.git"
-  },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/galetz/ProjetosWEB/issues"
+  "dependencies": {
+    "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "nodemon": "^2.0.4",
+    "nunjucks": "^3.2.2",
+    "toastify-js": "^1.9.2"
   },
-  "homepage": "https://github.com/galetz/ProjetosWEB#readme"
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "npm-run-all": "^4.1.5"
+  }
 }

@@ -1,0 +1,11 @@
+header {
+    background: #111111;
+}
+
+header .links a{
+    color: #FFF; 
+}
+
+header .links a:hover {
+    color: var(--color-mohogany);
+}
