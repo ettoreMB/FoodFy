@@ -35,3 +35,54 @@ header .links a:hover {
     justify-self: center;
     align-self: center;
 }
+
+
+#wrapper .content .cards {
+    width: 100%;
+}
+
+.cards .card {
+    width: 300px;
+    min-height: 30px;
+    margin: 10px 0;
+    
+    border-radius: 18px;
+    padding-bottom: 8px;
+
+}
+
+.cards .card  .card_image {
+    width: 100%;
+    margin: 20px 0;
+    
+}
+
+.cards .card  .card_image img {
+    object-fit: fill;
+    width: 100%;
+    border-radius: 16px;
+    box-shadow:0px 0px 6px 0px rgba(97, 97, 97, 0.301);
+}
+
+.cards .card .card_content {
+    margin: 0 5px;
+}
+
+.cards .card  .card_content h3 {
+    font-size: 18px;
+    color: #111111;
+    font-weight: 22px;
+} 
+
+.cards .card  .card_content span {
+  font-size: 14px;
+  color: #777777;
+  font-weight: 16px;
+}
+
+/*ABOUT*/
+
+.about h2,
+p  {
+  margin: 20px 0;
+}

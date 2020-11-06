@@ -15,7 +15,7 @@ exports.show = (req, res) => {
 }
 
 exports.index = (req, res) => {
-    res.render ('recipes/admin/index')
+    res.render ('admin/index')
 }
 
 exports.create = (req, res) => {

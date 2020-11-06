@@ -9,3 +9,48 @@ header .links a{
 header .links a:hover {
     color: var(--color-mohogany);
 }
+
+
+.cards .card {
+    min-height: 30px;
+    margin: 10px 0;
+    border-radius: 18px;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.cards .card  .card_image {
+    width: 172px;
+    height: 80px;
+    
+}
+
+.cards .card  .card_image img {
+    object-fit: fill;
+    width: 100%;
+    border-radius: 16px;
+    box-shadow:0px 0px 6px 0px rgba(97, 97, 97, 0.301);
+}
+
+.cards .card .card_content {
+    margin: 0 5px;
+    display: inline-grid;
+}
+
+.cards .card  .card_content h3 {
+    font-size: 18px;
+    color: #111111;
+    font-weight: 22px;
+} 
+
+.cards .card  .card_content span {
+  font-size: 14px;
+  color: #777777;
+  font-weight: 16px;
+}
+
+.cards .card  .card_content a {
+    font-size: 14px;
+    color: #6558C3;
+}
